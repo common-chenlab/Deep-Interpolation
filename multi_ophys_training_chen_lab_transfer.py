@@ -31,7 +31,7 @@ generator_test_param['pre_post_omission'] = 1
 #TODO
 generator_test_param[
     "train_path"
-] = "/net/claustrum2/mnt/data/Projects/Perirhinal/Animals/pr012/2P/pr012-32/PreProcess/A1_Ch0/A1_Ch0_10-56-09.mat"
+] = "/net/claustrum4/mnt/storage/data/Projects/Transsynaptic/Animals/os006/2P/os006-4/PreProcess/A0_Ch1/A0_Ch1_11-42-11.mat"
 generator_test_param["batch_size"] = 5
 generator_test_param["start_frame"] = 0
 generator_test_param["end_frame"] = -1
