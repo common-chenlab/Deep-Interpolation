@@ -21,7 +21,8 @@ module load python3
 pip install --user s3fs
 module load tensorflow/2.3.1
 
-
+#TODO
+#change the pathway to your deepinterpolation pathway
 cd /usr3/bustaff/dlamay/deepinterpolation/
 
 
