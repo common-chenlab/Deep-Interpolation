@@ -28,6 +28,7 @@ generator_test_param["pre_post_frame"] = 30
 generator_test_param['pre_post_omission'] = 1
 
 #change to path of an example video(preferably not one in the training set)
+#TODO
 generator_test_param[
     "train_path"
 ] = "/net/claustrum2/mnt/data/Projects/Perirhinal/Animals/pr012/2P/pr012-32/PreProcess/A1_Ch0/A1_Ch0_10-56-09.mat"
@@ -42,6 +43,7 @@ train_paths = []
 frame_nums = []
 
 #csv file with paths of videos, make sure paths start with /net
+#TODO
 with open('/net/claustrum2/mnt/data/Projects/Perirhinal/deepinterpolation/train_paths_80_bad.csv','r') as csv_file:
     for a in csv.reader(csv_file, delimiter=','):
         train_paths.append(a[0])
@@ -69,9 +71,13 @@ for i in range(len(train_paths)):
 training_param["type"] = "trainer"
 training_param["name"] = "transfer_trainer"
 #Change this path to any model you wish to improve
+#training_param[
+#    "model_path"
+#] = r"/usr3/bustaff/dlamay/deepinterpolation/2019_09_11_23_32_unet_single_1024_mean_absolute_error_Ai148-0450.h5"
+#TODO
 training_param[
     "model_path"
-] = r"/usr3/bustaff/dlamay/deepinterpolation/2019_09_11_23_32_unet_single_1024_mean_absolute_error_Ai148-0450.h5"
+] = r"/net/claustrum2/mnt/data/Projects/Perirhinal/deepinterpolation/trained_models/Training_models/pre-trained models/2019_09_11_23_32_unet_single_1024_mean_absolute_error_Ai148-0450.h5"
 #path to trained model, upload this model to your home directory
 
 training_param["run_uid"] = run_uid
